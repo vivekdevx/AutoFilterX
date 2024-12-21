@@ -220,9 +220,9 @@ async def start(client, message):
                         [
                             [
                                 InlineKeyboardButton(
-                                    '🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ / ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🧿',
-                                    callback_data=f'generate_stream_link:{file_id}'
-                                ),
+                                    '🎥 ᴊᴏɪɴ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇsᴛ ɢʀᴏᴜᴘ 🎥',
+                                    url=f'https://t.me/+pp_D21tjCtAzMjc1'
+                                )
                             ],
                             [
                                 InlineKeyboardButton(
@@ -251,13 +251,13 @@ async def start(client, message):
                 "<b><i>📌 ᴘʟᴇᴀꜱᴇ ꜱᴀᴠᴇ ᴏʀ ꜰᴏʀᴡᴀʀᴅ ᴛʜᴇꜱᴇ ꜰɪʟᴇꜱ ꜱᴏᴏɴ.</i></b>"
             )
         )
+        await sts.delete()
         await asyncio.sleep(600)
         for sent_msg in messages_to_delete:
             await sent_msg.delete()
         await notify_msg.edit_text(
             "<b>🗑️ All files have been deleted successfully! Kindly search again if needed.</b>"
         )
-        await sts.delete()
         return
 
     
@@ -354,7 +354,7 @@ async def start(client, message):
             )
         )
         await asyncio.sleep(300)
-        await k.edit("<b>ʏᴏᴜʀ ᴍᴇꜱꜱᴀɢᴇ ɪꜱ ᴅᴇʟᴇᴛᴇᴅ !\nᴋɪɴᴅʟʏ ꜱᴇᴀʀᴄʜ ᴀɢᴀɪɴ.</b>")
+        await k.edit("<b>🗑️ All files have been deleted successfully! Kindly search again if needed.</b>")
         return
         
     
@@ -448,7 +448,7 @@ async def start(client, message):
         await asyncio.sleep(600)
         for x in filesarr:
             await x.delete()
-        await k.edit_text("<b>ʏᴏᴜʀ ᴠɪᴅᴇᴏꜱ / ꜰɪʟᴇꜱ ᴀʀᴇ ᴅᴇʟᴇᴛᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ !\nᴋɪɴᴅʟʏ ꜱᴇᴀʀᴄʜ ᴀɢᴀɪɴ.</b>")
+        await k.edit_text("<b>🗑️ All files have been deleted successfully! Kindly search again if needed.</b>")
         return
         
     elif data.startswith("files"):
