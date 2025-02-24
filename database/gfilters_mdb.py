@@ -69,24 +69,24 @@ async def delete_gfilter(message, text, gfilters):
     if query == 1:
         mycol.delete_one(myquery)
         await message.reply_text(
-            f"'`{text}`'  Deleted. I'll not respond to that gfilter anymore.",
+            f"'`{text}`'  𝖣𝖾𝗅𝖾𝗍𝖾𝖽. 𝖨'𝗅𝗅 𝗇𝗈𝗍 𝗋𝖾𝗌𝗉𝗈𝗇𝖽 𝗍𝗈 𝗍𝗁𝖺𝗍 𝗀𝖿𝗂𝗅𝗍𝖾𝗋 𝖺𝗇𝗒𝗆𝗈𝗋𝖾.",
             quote=True,
             parse_mode=enums.ParseMode.MARKDOWN
         )
     else:
-        await message.reply_text("Couldn't find that gfilter!", quote=True)
+        await message.reply_text("𝖢𝗈𝗎𝗅𝖽𝗇'𝗍 𝖿𝗂𝗇𝖽 𝗍𝗁𝖺𝗍 𝗀𝖿𝗂𝗅𝗍𝖾𝗋!", quote=True)
 
 async def del_allg(message, gfilters):
     if str(gfilters) not in mydb.list_collection_names():
-        await message.edit_text("Nothing to Remove !")
+        await message.edit_text("𝖭𝗈𝗍𝗁𝗂𝗇𝗀 𝗍𝗈 𝖱𝖾𝗆𝗈𝗏𝖾!")
         return
 
     mycol = mydb[str(gfilters)]
     try:
         mycol.drop()
-        await message.edit_text(f"All gfilters has been removed !")
+        await message.edit_text(f"𝖠𝗅𝗅 𝗀𝖿𝗂𝗅𝗍𝖾𝗋𝗌 𝗁𝖺𝗌 𝖻𝖾𝖾𝗇 𝗋𝖾𝗆𝗈𝗏𝖾𝖽!")
     except:
-        await message.edit_text("Couldn't remove all gfilters !")
+        await message.edit_text("𝖢𝗈𝗎𝗅𝖽𝗇'𝗍 𝗋𝖾𝗆𝗈𝗏𝖾 𝖺𝗅𝗅 𝗀𝖿𝗂𝗅𝗍𝖾𝗋𝗌!")
         return
 
 async def count_gfilters(gfilters):
