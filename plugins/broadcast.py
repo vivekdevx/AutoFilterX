@@ -12,7 +12,7 @@ async def verupikkals(bot, message):
     users = await db.get_all_users()
     b_msg = message.reply_to_message
     sts = await message.reply_text(
-        text='Broadcasting your messages...'
+        text='𝖡𝗋𝗈𝖺𝖽𝖼𝖺𝗌𝗍𝗂𝗇𝗀 𝗒𝗈𝗎𝗋 𝗆𝖾𝗌𝗌𝖺𝗀𝖾𝗌...'
     )
     start_time = time.time()
     total_users = await db.total_users_count()
@@ -36,16 +36,16 @@ async def verupikkals(bot, message):
         done += 1
         await asyncio.sleep(2)
         if not done % 20:
-            await sts.edit(f"Broadcast in progress:\n\nTotal Users {total_users}\nCompleted: {done} / {total_users}\nSuccess: {success}\nBlocked: {blocked}\nDeleted: {deleted}")    
+            await sts.edit(f"𝖡𝗋𝗈𝖺𝖽𝖼𝖺𝗌𝗍 𝗂𝗇 𝗉𝗋𝗈𝗀𝗋𝖾𝗌𝗌:\n\n𝖳𝗈𝗍𝖺𝗅 𝖴𝗌𝖾𝗋𝗌: {total_users}\n𝖢𝗈𝗆𝗉𝗅𝖾𝗍𝖾𝖽: {done} / {total_users}\n𝖲𝗎𝖼𝖼𝖾𝗌𝗌: {success}\n𝖡𝗅𝗈𝖼𝗄𝖾𝖽: {blocked}\n𝖣𝖾𝗅𝖾𝗍𝖾𝖽: {deleted}")    
     time_taken = datetime.timedelta(seconds=int(time.time()-start_time))
-    await sts.edit(f"Broadcast Completed:\nCompleted in {time_taken} seconds.\n\nTotal Users {total_users}\nCompleted: {done} / {total_users}\nSuccess: {success}\nBlocked: {blocked}\nDeleted: {deleted}")
+    await sts.edit(f"𝖡𝗋𝗈𝖺𝖽𝖼𝖺𝗌𝗍 𝖢𝗈𝗆𝗉𝗅𝖾𝗍𝖾𝖽:\n𝖢𝗈𝗆𝗉𝗅𝖾𝗍𝖾𝖽 𝗂𝗇 {time_taken} 𝗌𝖾𝖼𝗈𝗇𝖽𝗌.\n\n𝖳𝗈𝗍𝖺𝗅 𝖴𝗌𝖾𝗋𝗌: {total_users}\n𝖢𝗈𝗆𝗉𝗅𝖾𝗍𝖾𝖽: {done} / {total_users}\n𝖲𝗎𝖼𝖼𝖾𝗌𝗌: {success}\n𝖡𝗅𝗈𝖼𝗄𝖾𝖽: {blocked}\n𝖣𝖾𝗅𝖾𝗍𝖾𝖽: {deleted}")
 
 @Client.on_message(filters.command("grp_broadcast") & filters.user(ADMINS) & filters.reply)
 async def broadcast_group(bot, message):
     groups = await db.get_all_chats()
     b_msg = message.reply_to_message
     sts = await message.reply_text(
-        text='Broadcasting your messages to groups...'
+        text='𝖡𝗋𝗈𝖺𝖽𝖼𝖺𝗌𝗍𝗂𝗇𝗀 𝗒𝗈𝗎𝗋 𝗆𝖾𝗌𝗌𝖺𝗀𝖾𝗌 𝗍𝗈 𝗀𝗋𝗈𝗎𝗉𝗌...'
     )
     start_time = time.time()
     total_groups = await db.total_chat_count()
@@ -61,7 +61,7 @@ async def broadcast_group(bot, message):
                 failed += 1
         done += 1
         if not done % 20:
-            await sts.edit(f"Broadcast in progress:\n\nTotal Groups {total_groups}\nCompleted: {done} / {total_groups}\nSuccess: {success}")    
+            await sts.edit(f"𝖡𝗋𝗈𝖺𝖽𝖼𝖺𝗌𝗍 𝗂𝗇 𝗉𝗋𝗈𝗀𝗋𝖾𝗌𝗌:\n\n𝖳𝗈𝗍𝖺𝗅 𝖦𝗋𝗈𝗎𝗉𝗌 {total_groups}\n𝖢𝗈𝗆𝗉𝗅𝖾𝗍𝖾𝖽: {done} / {total_groups}\n𝖲𝗎𝖼𝖼𝖾𝗌𝗌: {success}")    
     time_taken = datetime.timedelta(seconds=int(time.time()-start_time))
-    await sts.edit(f"Broadcast Completed:\nCompleted in {time_taken} seconds.\n\nTotal Groups {total_groups}\nCompleted: {done} / {total_groups}\nSuccess: {success}")
+    await sts.edit(f"𝖡𝗋𝗈𝖺𝖽𝖼𝖺𝗌𝗍 𝖢𝗈𝗆𝗉𝗅𝖾𝗍𝖾𝖽:\n𝖢𝗈𝗆𝗉𝗅𝖾𝗍𝖾𝖽 𝗂𝗇 {time_taken} 𝗌𝖾𝖼𝗈𝗇𝖽𝗌.\n\n𝖳𝗈𝗍𝖺𝗅 𝖦𝗋𝗈𝗎𝗉𝗌 {total_groups}\n𝖢𝗈𝗆𝗉𝗅𝖾𝗍𝖾𝖽: {done} / {total_groups}\n𝖲𝗎𝖼𝖼𝖾𝗌𝗌: {success}")
         
