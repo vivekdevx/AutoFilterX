@@ -11,4 +11,4 @@ async def join_reqs(client, message: ChatJoinRequest):
 @Client.on_message(filters.command("delreq") & filters.private & filters.user(ADMINS))
 async def del_requests(client, message):
     await db.del_join_req()    
-    await message.reply("<b>⚙ ꜱᴜᴄᴄᴇꜱꜱғᴜʟʟʏ ᴄʜᴀɴɴᴇʟ ʟᴇғᴛ ᴜꜱᴇʀꜱ ᴅᴇʟᴇᴛᴇᴅ</b>")
+    await message.reply("<b>⚙ 𝖲𝗎𝖼𝖼𝖾𝗌𝗌𝖿𝗎𝗅𝗅𝗒 𝖼𝗁𝖺𝗇𝗇𝖾𝗅 𝗅𝖾𝖿𝗍 𝗎𝗌𝖾𝗋𝗌 𝖽𝖾𝗅𝖾𝗍𝖾𝖽</b>")
