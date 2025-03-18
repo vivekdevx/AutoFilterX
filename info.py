@@ -21,25 +21,25 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://graph.org/file/16fb6c4f7a8c2807f5bf0.jpg')).split() #SAMPLE PIC
-NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/62efbcc4e7580b76530ba.jpg")
-MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/e215d12bfd4fa2155e90e.mp4")
-SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/9133dc596eabc73750774.jpg")
-SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://telegra.ph/file/4963dfeee700078956e76.jpg'))
-CODE = (environ.get('CODE', 'https://telegra.ph/file/742a11b84ca0689f03102.jpg'))
+PICS = (environ.get('PICS', 'https://graph.org/file/8a29242f32d267c17b748-2c5f6fcc4dec79b265.jpg')).split() #SAMPLE PIC
+NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/8a29242f32d267c17b748-2c5f6fcc4dec79b265.jpg")
+MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/8a29242f32d267c17b748-2c5f6fcc4dec79b265.jpg")
+SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/8a29242f32d267c17b748-2c5f6fcc4dec79b265.jpg")
+SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/8a29242f32d267c17b748-2c5f6fcc4dec79b265.jpg'))
+CODE = (environ.get('CODE', 'https://graph.org/file/8a29242f32d267c17b748-2c5f6fcc4dec79b265.jpg'))
 
 #stream link shortner
-STREAM_SITE = (environ.get('STREAM_SITE', 'seturl.in'))
-STREAM_API = (environ.get('STREAM_API', '83f0094235296bc2008394c2c8d54d92739e0d06'))
-STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/wwwmovieslink/7'))
+STREAM_SITE = (environ.get('STREAM_SITE', ''))
+STREAM_API = (environ.get('STREAM_API', ''))
+STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/veer_haanuman'))
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()] #Channel id for auto indexing ( make sure bot is admin )
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1388032243 1769130634').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002559617142').split()] #Channel id for auto indexing ( make sure bot is admin )
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
-auth_channel = environ.get('AUTH_CHANNEL', '') #Channel / Group Id for force sub ( make sure bot is admin )
+auth_channel = environ.get('AUTH_CHANNEL', '-1002382059204') #Channel / Group Id for force sub ( make sure bot is admin )
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
@@ -50,35 +50,35 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True)) # True if you want no results messages in Log Channel
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', '')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://vivekgs:ramayanvivek@cluster0.q8yumgj.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Verify
 VERIFY = bool(environ.get('VERIFY', True)) # Verification On ( True ) / Off ( False )
 HOWTOVERIFY = environ.get('HOWTOVERIFY', 'https://t.me/wwwmovieslink/7') # How to open tutorial link for verification
 
 # Others
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'seturl.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', '83f0094235296bc2008394c2c8d54d92739e0d06')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', '')
+SHORTLINK_API = environ.get('SHORTLINK_API', '')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+pp_D21tjCtAzMjc1')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+QgSl55NlTiI0NDhl')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/wwwmovieslink/7') # Tutorial video link for opening shortlink website 
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+lkhfr_mHxgo1N2M1')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/veer_haanuman')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/veer_haanuman') # Tutorial video link for opening shortlink website 
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
-MSG_ALRT = environ.get('MSG_ALRT', '@GamerBhai02 ❤️')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '')) #Log channel id ( make sure bot is admin )
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/all_movies_link_support') #Support group link ( make sure bot is admin )
+MSG_ALRT = environ.get('MSG_ALRT', 'Thanks To Pro⚡')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002576209752')) #Log channel id ( make sure bot is admin )
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+lkhfr_mHxgo1N2M1') #Support group link ( make sure bot is admin )
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", f"{script.IMDB_TEMPLATE_TXT}")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
