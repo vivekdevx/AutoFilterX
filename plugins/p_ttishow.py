@@ -9,7 +9,7 @@ from Script import script
 from pyrogram.errors import ChatAdminRequired
 import asyncio 
 
-"""-----------------------------------------https://t.me/AllMoviesLinkBot--------------------------------------"""
+"""-----------------------------------------https://t.me/veer_haanuman--------------------------------------"""
 
 @Client.on_message(filters.new_chat_members & filters.group)
 async def save_group(bot, message):
@@ -23,7 +23,7 @@ async def save_group(bot, message):
         if message.chat.id in temp.BANNED_CHATS:
             # Inspired from a boat of a banana tree
             buttons = [[
-                InlineKeyboardButton('📌 𝖢𝗈𝗇𝗍𝖺𝖼𝗍 𝖲𝗎𝗉𝗉𝗈𝗋𝗍 📌', url=f'https://t.me/GamerBhai02')
+                InlineKeyboardButton('📌 𝖢𝗈𝗇𝗍𝖺𝖼𝗍 𝖲𝗎𝗉𝗉𝗈𝗋𝗍 📌', url=f'https://t.me/+lkhfr_mHxgo1N2M1')
             ]]
             reply_markup=InlineKeyboardMarkup(buttons)
             k = await message.reply(
@@ -38,7 +38,7 @@ async def save_group(bot, message):
             await bot.leave_chat(message.chat.id)
             return
         buttons = [[
-                    InlineKeyboardButton("🍁 𝖧𝗈𝗐 𝗍𝗈 𝗎𝗌𝖾 🍁", url="https://t.me/AllMoviesLinkBot?start=help")
+                    InlineKeyboardButton("🍁 𝖧𝗈𝗐 𝗍𝗈 𝗎𝗌𝖾 🍁", url="https://t.me/+lkhfr_mHxgo1N2M1?start=help")
                   ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -58,7 +58,7 @@ async def save_group(bot, message):
                                                  caption=(script.MELCOW_ENG.format(u.mention, message.chat.title)),
                                                  reply_markup=InlineKeyboardMarkup(
                                                                          [[
-                                                                           InlineKeyboardButton("📌 𝖢𝗈𝗇𝗍𝖺𝖼𝗍 𝖲𝗎𝗉𝗉𝗈𝗋𝗍 📌", url=f'https://t.me/GamerBhai02')
+                                                                           InlineKeyboardButton("📌 𝖢𝗈𝗇𝗍𝖺𝖼𝗍 𝖲𝗎𝗉𝗉𝗈𝗋𝗍 📌", url=f'https://t.me/+lkhfr_mHxgo1N2M1')
                                                                          ]]
                                                  ),
                                                  parse_mode=enums.ParseMode.HTML
@@ -83,7 +83,7 @@ async def leave_a_chat(bot, message):
         chat = chat
     try:
         buttons = [[
-                  InlineKeyboardButton("📌 𝖢𝗈𝗇𝗍𝖺𝖼𝗍 𝖲𝗎𝗉𝗉𝗈𝗋𝗍 📌", url="https://t.me/GamerBhai02")
+                  InlineKeyboardButton("📌 𝖢𝗈𝗇𝗍𝖺𝖼𝗍 𝖲𝗎𝗉𝗉𝗈𝗋𝗍 📌", url="https://t.me/+lkhfr_mHxgo1N2M1")
                   ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
@@ -122,7 +122,7 @@ async def disable_chat(bot, message):
     await message.reply('𝖢𝗁𝖺𝗍 𝖲𝗎𝖼𝖼𝖾𝗌𝗌𝖿𝗎𝗅𝗅𝗒 𝖣𝗂𝗌𝖺𝖻𝗅𝖾𝖽')
     try:
         buttons = [[
-            InlineKeyboardButton('📌 𝖢𝗈𝗇𝗍𝖺𝖼𝗍 𝖲𝗎𝗉𝗉𝗈𝗋𝗍 📌', url=f'https://t.me/GamerBhai02')
+            InlineKeyboardButton('📌 𝖢𝗈𝗇𝗍𝖺𝖼𝗍 𝖲𝗎𝗉𝗉𝗈𝗋𝗍 📌', url=f'https://t.me/+lkhfr_mHxgo1N2M1')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
