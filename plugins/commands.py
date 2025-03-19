@@ -43,18 +43,11 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('🎥 𝗠𝗼𝘃𝗶𝗲 𝗥𝗲𝗾𝘂𝗲𝘀𝘁 𝗚𝗿𝗼𝘂𝗽 📽', url=f'https://t.me/+ZUyhAwBNBsU0YjA9')
-                ],[
-                    InlineKeyboardButton('☆ 𝗔𝗱𝗱 𝗠𝗲 𝗧𝗼 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽 ☆', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
-                ],[
-                    InlineKeyboardButton('💸 𝗘𝗮𝗿𝗻 𝗠𝗼𝗻𝗲𝘆 💸', callback_data="shortlink_info"),
                     InlineKeyboardButton('• 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 •', callback_data='channels')
                 ],[
                     InlineKeyboardButton('• 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 •', callback_data='help'),
                     InlineKeyboardButton('• 𝗔𝗯𝗼𝘂𝘁 •', callback_data='about')
-                ],[
-                    InlineKeyboardButton('✨ 𝗕𝘂𝘆 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻 : 𝗥𝗲𝗺𝗼𝘃𝗲 𝗔𝗱𝘀 ✨', callback_data="premium_info")
-                  ]]
+                ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
         curr_time = current_time.hour        
@@ -66,13 +59,13 @@ async def start(client, message):
             gtxt = "𝖦𝗈𝗈𝖽 𝖤𝗏𝖾𝗇𝗂𝗇𝗀 👋"
         else:
             gtxt = "𝖦𝗈𝗈𝖽 𝖭𝗂𝗀𝗁𝗍 👋"
-        m=await message.reply_text("<i>𝖶𝖾𝗅𝖼𝗈𝗆𝖾 𝖳𝗈 𝗔𝗹𝗹 𝗠𝗼𝘃𝗶𝗲𝘀 𝗟𝗶𝗻𝗸 𝗕𝗼𝘁.</i>")
+        m=await message.reply_text("<i>𝖶𝖾𝗅𝖼𝗈𝗆𝖾 𝖳𝗈 Veer Hanuman Bot.</i>")
         await asyncio.sleep(0.4)
-        await m.edit_text("👀")
+        await m.edit_text("🙏")
         await asyncio.sleep(0.5)
         await m.edit_text("⚡")
         await asyncio.sleep(0.5)
-        await m.edit_text("<b><i>𝖲𝗍𝖺𝗋𝗍𝗂𝗇𝗀...</i></b>")
+        await m.edit_text("<b><i>Jai Shree Ram!!😇🌸</i></b>")
         await asyncio.sleep(0.4)
         await m.delete()
         await message.reply_photo(
@@ -112,18 +105,11 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-                    InlineKeyboardButton('🎥 𝗠𝗼𝘃𝗶𝗲 𝗥𝗲𝗾𝘂𝗲𝘀𝘁 𝗚𝗿𝗼𝘂𝗽 📽', url=f'https://t.me/+ZUyhAwBNBsU0YjA9')
-                ],[
-                    InlineKeyboardButton('☆ 𝗔𝗱𝗱 𝗠𝗲 𝗧𝗼 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽 ☆', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
-                ],[
-                    InlineKeyboardButton('💸 𝗘𝗮𝗿𝗻 𝗠𝗼𝗻𝗲𝘆 💸', callback_data="shortlink_info"),
                     InlineKeyboardButton('• 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 •', callback_data='channels')
                 ],[
                     InlineKeyboardButton('• 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 •', callback_data='help'),
                     InlineKeyboardButton('• 𝗔𝗯𝗼𝘂𝘁 •', callback_data='about')
-                ],[
-                    InlineKeyboardButton('✨ 𝗕𝘂𝘆 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻 : 𝗥𝗲𝗺𝗼𝘃𝗲 𝗔𝗱𝘀 ✨', callback_data="premium_info")
-                  ]]
+                ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
         curr_time = current_time.hour        
@@ -135,13 +121,13 @@ async def start(client, message):
             gtxt = "𝖦𝗈𝗈𝖽 𝖤𝗏𝖾𝗇𝗂𝗇𝗀 👋"
         else:
             gtxt = "𝖦𝗈𝗈𝖽 𝖭𝗂𝗀𝗁𝗍 👋"
-        m=await message.reply_text("<i>𝖶𝖾𝗅𝖼𝗈𝗆𝖾 𝖳𝗈 𝗔𝗹𝗹 𝗠𝗼𝘃𝗶𝗲𝘀 𝗟𝗶𝗻𝗸 𝗕𝗼𝘁.</i>")
+        m=await message.reply_text("<i>𝖶𝖾𝗅𝖼𝗈𝗆𝖾 𝖳𝗈 Veer Hanuman Bot.</i>")
         await asyncio.sleep(0.4)
-        await m.edit_text("👀")
+        await m.edit_text("🙏")
         await asyncio.sleep(0.5)
         await m.edit_text("⚡")
         await asyncio.sleep(0.5)
-        await m.edit_text("<b><i>𝖲𝗍𝖺𝗋𝗍𝗂𝗇𝗀...</i></b>")
+        await m.edit_text("<b><i>Jai Shree Ram!!😇🌸</i></b>")
         await asyncio.sleep(0.4)
         await m.delete()
         await message.reply_photo(
@@ -214,14 +200,14 @@ async def start(client, message):
                         [
                             [
                                 InlineKeyboardButton(
-                                    '🎥 𝗝𝗼𝗶𝗻 𝗠𝗼𝘃𝗶𝗲 𝗥𝗲𝗾𝘂𝗲𝘀𝘁 𝗚𝗿𝗼𝘂𝗽 🎥',
-                                    url=f'https://t.me/+pp_D21tjCtAzMjc1'
+                                    '🎥 𝗝𝗼𝗶𝗻 𝗥𝗲𝗾𝘂𝗲𝘀𝘁 𝗚𝗿𝗼𝘂𝗽 🎥',
+                                    url=f'https://t.me/+lkhfr_mHxgo1N2M1'
                                 )
                             ],
                             [
                                 InlineKeyboardButton(
                                     '📌 𝗝𝗼𝗶𝗻 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 📌',
-                                    url=f'https://t.me/+QgSl55NlTiI0NDhl'
+                                    url=f'https://t.me/veer_haanuman'
                                 )
                             ]
                         ]
@@ -242,7 +228,7 @@ async def start(client, message):
                 "<b>❗️ <u>𝖨𝗆𝗉𝗈𝗋𝗍𝖺𝗇𝗍</u> ❗️</b>\n\n"
                 "<b>𝖳𝗁𝖾𝗌𝖾 𝖿𝗂𝗅𝖾𝗌 𝗐𝗂𝗅𝗅 𝖻𝖾 𝖽𝖾𝗅𝖾𝗍𝖾𝖽 𝗂𝗇</b> "
                 "<b><u>10 𝖬𝗂𝗇𝗎𝗍𝖾𝗌</u></b>.\n\n"
-                "<b><i>📌 𝖯𝗅𝖾𝖺𝗌𝖾 𝗦𝗮𝘃𝗲 𝖮𝗋 𝖥𝗈𝗋𝗐𝖺𝗋𝖽 𝖳𝗁𝖾𝗌𝖾 𝖥𝗂𝗅𝖾𝗌 𝗍𝗈 𝗦𝗮𝘃𝗲𝗱 𝗠𝗲𝘀𝘀𝗮𝗴𝗲𝘀 𝖲𝗈𝗈𝗇.</i></b>"
+                "<b><i>📌 𝖯𝗅𝖾𝖺𝗌𝖾 𝗦𝗮𝘃𝗲 𝖮𝗋 𝖥𝗈𝗋𝗐𝖺𝗋𝖽 𝖳𝗁𝖾𝗌𝖾 𝖥𝗂𝗅𝖾𝗌.</i></b>"
             )
         )
         await sts.delete()
@@ -341,8 +327,6 @@ async def start(client, message):
                         InlineKeyboardButton('📁 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 📁', url=g)
                     ], [
                         InlineKeyboardButton('⚡ 𝗛𝗼𝘄 𝘁𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 ⚡', url=await get_tutorial(chat_id))
-                    ], [
-                        InlineKeyboardButton('✨ 𝗕𝘂𝘆 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻 : 𝗥𝗲𝗺𝗼𝘃𝗲 𝗔𝗱𝘀 ✨', callback_data="seeplans")                        
                     ]
                 ]
             )
@@ -377,8 +361,6 @@ async def start(client, message):
                     InlineKeyboardButton('📁 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 📁', url=g)
                 ], [
                     InlineKeyboardButton('⚡ 𝗛𝗼𝘄 𝘁𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 ⚡', url=await get_tutorial(chat_id))
-                ], [
-                    InlineKeyboardButton('✨ 𝗕𝘂𝘆 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻 : 𝗥𝗲𝗺𝗼𝘃𝗲 𝗔𝗱𝘀 ✨', callback_data="seeplans")
                 ]]
             )
         )
@@ -432,13 +414,13 @@ async def start(client, message):
               InlineKeyboardButton('🚀 𝗙𝗮𝘀𝘁 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 / 𝗪𝗮𝘁𝗰𝗵 𝗢𝗻𝗹𝗶𝗻𝗲 🧿', callback_data=f'generate_stream_link:{file_id}'),
              ],
              [
-              InlineKeyboardButton('📌 𝗝𝗼𝗶𝗻 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 📌', url=f'https://t.me/+QgSl55NlTiI0NDhl') #Don't change anything without contacting me @LazyDeveloperr
+              InlineKeyboardButton('📌 𝗝𝗼𝗶𝗻 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 📌', url=f'https://t.me/veer_haanuman') #Don't change anything without contacting me @LazyDeveloperr
              ]
             ]
         )
     )
             filesarr.append(msg)
-        k = await client.send_message(chat_id = message.from_user.id, text=f"<b>❗️ <u>𝖨𝗆𝗉𝗈𝗋𝗍𝖺𝗇𝗍</u> ❗️</b>\n\n<b>𝖳𝗁𝖾𝗌𝖾 𝖵𝗂𝖽𝖾𝗈𝗌 / 𝖥𝗂𝗅𝖾𝗌 𝗐𝗂𝗅𝗅 𝖻𝖾 𝖽𝖾𝗅𝖾𝗍𝖾𝖽 𝗂𝗇</b> <b><u>10 𝖬𝗂𝗇𝗎𝗍𝖾𝗌</u> </b><b>(𝖣𝗎𝖾 𝗍𝗈 𝖢𝗈𝗉𝗒𝗋𝗂𝗀𝗁𝗍 𝖨𝗌𝗌𝗎𝖾𝗌).</b>\n\n<b><i>📌 Please Forward these Videos / Files to 𝗦𝗮𝘃𝗲𝗱 𝗠𝗲𝘀𝘀𝗮𝗴𝗲𝘀 and start downloading there.</i></b>")
+        k = await client.send_message(chat_id = message.from_user.id, text=f"<b>❗️ <u>𝖨𝗆𝗉𝗈𝗋𝗍𝖺𝗇𝗍</u> ❗️</b>\n\n<b>𝖳𝗁is Episode 𝗐𝗂𝗅𝗅 𝖻𝖾 𝖽𝖾𝗅𝖾𝗍𝖾𝖽 𝗂𝗇</b> <b><u>10 𝖬𝗂𝗇𝗎𝗍𝖾𝗌</u> </b>\n\n<b><i>📌 Please Forward this Episode and start Downloading there.</i></b>")
         await asyncio.sleep(600)
         for x in filesarr:
             await x.delete()
@@ -472,8 +454,6 @@ async def start(client, message):
                             InlineKeyboardButton('📁 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 📁', url=g)
                         ], [
                             InlineKeyboardButton('⚡ 𝗛𝗼𝘄 𝘁𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 ⚡', url=await get_tutorial(chat_id))
-                        ], [
-                            InlineKeyboardButton('✨ 𝗕𝘂𝘆 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻 : 𝗥𝗲𝗺𝗼𝘃𝗲 𝗔𝗱𝘀 ✨', callback_data="seeplans")                            
                         ]
                     ]
                 )
@@ -508,7 +488,7 @@ async def start(client, message):
               InlineKeyboardButton('🚀 𝗙𝗮𝘀𝘁 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 / 𝗪𝗮𝘁𝗰𝗵 𝗢𝗻𝗹𝗶𝗻𝗲 🧿', callback_data=f'generate_stream_link:{file_id}'),
              ],
              [
-              InlineKeyboardButton('📌 𝗝𝗼𝗶𝗻 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 📌', url=f'https://t.me/+QgSl55NlTiI0NDhl') #Don't change anything without contacting me @LazyDeveloperr
+              InlineKeyboardButton('📌 𝗝𝗼𝗶𝗻 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 📌', url=f'https://t.me/veer_haanuman') #Don't change anything without contacting me @LazyDeveloperr
              ]
             ]
         )
@@ -530,7 +510,7 @@ async def start(client, message):
               InlineKeyboardButton('🚀 𝗙𝗮𝘀𝘁 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 / 𝗪𝗮𝘁𝗰𝗵 𝗢𝗻𝗹𝗶𝗻𝗲 🧿', callback_data=f'generate_stream_link:{file_id}'),
              ],
              [
-              InlineKeyboardButton('📌 𝗝𝗼𝗶𝗻 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 📌', url=f'https://t.me/+QgSl55NlTiI0NDhl') #Don't change anything without contacting me @LazyDeveloperr
+              InlineKeyboardButton('📌 𝗝𝗼𝗶𝗻 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 📌', url=f'https://t.me/veer_haanuman') #Don't change anything without contacting me @LazyDeveloperr
              ]
             ]
                                                                      )
@@ -538,7 +518,7 @@ async def start(client, message):
             btn = [[
                 InlineKeyboardButton("❗ 𝗚𝗲𝘁 𝗙𝗶𝗹𝗲 𝗔𝗴𝗮𝗶𝗻 ❗", callback_data=f'delfile#{file_id}')
             ]]
-            k = await client.send_message(chat_id = message.from_user.id, text=f"<b>❗️ <u>𝖨𝗆𝗉𝗈𝗋𝗍𝖺𝗇𝗍</u> ❗️</b>\n\n<b>𝖳𝗁𝗂𝗌 𝖵𝗂𝖽𝖾𝗈 / 𝖥𝗂𝗅𝖾 𝗐𝗂𝗅𝗅 𝖻𝖾 𝖽𝖾𝗅𝖾𝗍𝖾𝖽 𝗂𝗇</b> <b><u>10 𝖬𝗂𝗇𝗎𝗍𝖾𝗌</u> </b><b>(𝖣𝗎𝖾 𝗍𝗈 𝖢𝗈𝗉𝗒𝗋𝗂𝗀𝗁𝗍 𝖨𝗌𝗌𝗎𝖾𝗌).</b>\n\n<b><i>📌 𝖯𝗅𝖾𝖺𝗌𝖾 𝖥𝗈𝗋𝗐𝖺𝗋𝖽 𝗍𝗁𝗂𝗌 𝖵𝗂𝖽𝖾𝗈 / 𝖥𝗂𝗅𝖾 𝗍𝗈 𝗦𝗮𝘃𝗲𝗱 𝗠𝗲𝘀𝘀𝗮𝗴𝗲𝘀 𝖺𝗇𝖽 𝖲𝗍𝖺𝗋𝗍 𝖣𝗈𝗐𝗇𝗅𝗈𝖺𝖽𝗂𝗇𝗀 𝗍𝗁𝖾𝗋𝖾.</i></b>")
+            k = await client.send_message(chat_id = message.from_user.id, text=f"<b>❗️ <u>𝖨𝗆𝗉𝗈𝗋𝗍𝖺𝗇𝗍</u> ❗️</b>\n\n<b>𝖳𝗁𝗂𝗌 Episode 𝗐𝗂𝗅𝗅 𝖻𝖾 𝖽𝖾𝗅𝖾𝗍𝖾𝖽 𝗂𝗇</b> <b><u>10 𝖬𝗂𝗇𝗎𝗍𝖾𝗌</u> </b>\n\n<b><i>📌 𝖯𝗅𝖾𝖺𝗌𝖾 𝖥𝗈𝗋𝗐𝖺𝗋𝖽 𝗍𝗁𝗂𝗌 Episode 𝖺𝗇𝖽 𝖲𝗍𝖺𝗋𝗍 𝖣𝗈𝗐𝗇𝗅𝗈𝖺𝖽𝗂𝗇𝗀 𝗍𝗁𝖾𝗋𝖾.</i></b>")
             await asyncio.sleep(600)
             await msg.delete()
             await k.edit_text("<b>𝖸𝗈𝗎𝗋 𝖵𝗂𝖽𝖾𝗈 / 𝖥𝗂𝗅𝖾 𝗂𝗌 𝗌𝗎𝖼𝖼𝖾𝗌𝗌𝖿𝗎𝗅𝗅𝗒 𝖽𝖾𝗅𝖾𝗍𝖾𝖽!!\n\n𝖢𝗅𝗂𝖼𝗄 𝖻𝖾𝗅𝗈𝗐 𝖻𝗎𝗍𝗍𝗈𝗇 𝗍𝗈 𝗀𝖾𝗍 𝗒𝗈𝗎𝗋 𝖽𝖾𝗅𝖾𝗍𝖾𝖽 𝖵𝗂𝖽𝖾𝗈 / 𝖥𝗂𝗅𝖾 𝖠𝗀𝖺𝗂𝗇 👇</b>",reply_markup=InlineKeyboardMarkup(btn))
@@ -582,7 +562,7 @@ async def start(client, message):
               InlineKeyboardButton('🚀 𝗙𝗮𝘀𝘁 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 / 𝗪𝗮𝘁𝗰𝗵 𝗢𝗻𝗹𝗶𝗻𝗲 🧿', callback_data=f'generate_stream_link:{file_id}'),
              ],
              [
-              InlineKeyboardButton('📌 𝗝𝗼𝗶𝗻 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 📌', url=f'https://t.me/+QgSl55NlTiI0NDhl') #Don't change anything without contacting me @LazyDeveloperr
+              InlineKeyboardButton('📌 𝗝𝗼𝗶𝗻 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 📌', url=f'https://t.me/veer_haanuman') #Don't change anything without contacting me @LazyDeveloperr
              ]
             ]
         )
@@ -590,7 +570,7 @@ async def start(client, message):
     btn = [[
         InlineKeyboardButton("❗ 𝗚𝗲𝘁 𝗙𝗶𝗹𝗲 𝗔𝗴𝗮𝗶𝗻 ❗", callback_data=f'delfile#{file_id}')
     ]]
-    k = await client.send_message(chat_id = message.from_user.id, text=f"<b>❗️ <u>𝖨𝗆𝗉𝗈𝗋𝗍𝖺𝗇𝗍</u> ❗️</b>\n\n<b>𝖳𝗁𝗂𝗌 𝖵𝗂𝖽𝖾𝗈 / 𝖥𝗂𝗅𝖾 𝗐𝗂𝗅𝗅 𝖻𝖾 𝖽𝖾𝗅𝖾𝗍𝖾𝖽 𝗂𝗇</b> <b><u>10 𝖬𝗂𝗇𝗎𝗍𝖾𝗌</u> </b><b>(𝖣𝗎𝖾 𝗍𝗈 𝖢𝗈𝗉𝗒𝗋𝗂𝗀𝗁𝗍 𝖨𝗌𝗌𝗎𝖾𝗌).</b>\n\n<b><i>📌 𝖯𝗅𝖾𝖺𝗌𝖾 𝖥𝗈𝗋𝗐𝖺𝗋𝖽 𝗍𝗁𝗂𝗌 𝖵𝗂𝖽𝖾𝗈 / 𝖥𝗂𝗅𝖾 𝗍𝗈 𝗦𝗮𝘃𝗲𝗱 𝗠𝗲𝘀𝘀𝗮𝗴𝗲𝘀 𝖺𝗇𝖽 𝖲𝗍𝖺𝗋𝗍 𝖣𝗈𝗐𝗇𝗅𝗈𝖺𝖽𝗂𝗇𝗀 𝗍𝗁𝖾𝗋𝖾.</i></b>")
+    k = await client.send_message(chat_id = message.from_user.id, text=f"<b>❗️ <u>𝖨𝗆𝗉𝗈𝗋𝗍𝖺𝗇𝗍</u> ❗️</b>\n\n<b>𝖳𝗁𝗂𝗌 Episode 𝗐𝗂𝗅𝗅 𝖻𝖾 𝖽𝖾𝗅𝖾𝗍𝖾𝖽 𝗂𝗇</b> <b><u>10 𝖬𝗂𝗇𝗎𝗍𝖾𝗌</u> </b>\n\n<b><i>📌 𝖯𝗅𝖾𝖺𝗌𝖾 𝖥𝗈𝗋𝗐𝖺𝗋𝖽 𝗍𝗁𝗂𝗌 Episode 𝖺𝗇𝖽 𝖲𝗍𝖺𝗋𝗍 𝖣𝗈𝗐𝗇𝗅𝗈𝖺𝖽𝗂𝗇𝗀 𝗍𝗁𝖾𝗋𝖾.</i></b>")
     await asyncio.sleep(600)
     await msg.delete()
     await k.edit_text("<b>𝖸𝗈𝗎𝗋 𝖵𝗂𝖽𝖾𝗈 / 𝖥𝗂𝗅𝖾 𝗂𝗌 𝗌𝗎𝖼𝖼𝖾𝗌𝗌𝖿𝗎𝗅𝗅𝗒 𝖽𝖾𝗅𝖾𝗍𝖾𝖽!!\n\n𝖢𝗅𝗂𝖼𝗄 𝖻𝖾𝗅𝗈𝗐 𝖻𝗎𝗍𝗍𝗈𝗇 𝗍𝗈 𝗀𝖾𝗍 𝗒𝗈𝗎𝗋 𝖽𝖾𝗅𝖾𝗍𝖾𝖽 𝖵𝗂𝖽𝖾𝗈 / 𝖥𝗂𝗅𝖾 𝖠𝗀𝖺𝗂𝗇 👇</b>",reply_markup=InlineKeyboardMarkup(btn))
@@ -956,7 +936,7 @@ async def requests(bot, message):
                         InlineKeyboardButton('𝖵𝗂𝖾𝗐 𝖱𝖾𝗊𝗎𝖾𝗌𝗍', url=f"{message.reply_to_message.link}"),
                         InlineKeyboardButton('𝖲𝗁𝗈𝗐 𝖮𝗉𝗍𝗂𝗈𝗇𝗌', callback_data=f'show_option#{reporter}')
                       ]]
-                reported_post = await bot.send_message(chat_id=REQST_CHANNEL, text=f"<b>📝 𝖱𝖾𝗊𝗎𝖾𝗌𝗍: <u>{content}</u>\n\n📚 𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝖽 𝖡𝗒: {mention}\n📖 𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝖽 𝖨𝖣: {reporter}\n\n©️ 𝖠𝗅𝗅𝖬𝗈𝗏𝗂𝖾𝗌𝖫𝗂𝗇𝗄™</b>", reply_markup=InlineKeyboardMarkup(btn))
+                reported_post = await bot.send_message(chat_id=REQST_CHANNEL, text=f"<b>📝 𝖱𝖾𝗊𝗎𝖾𝗌𝗍: <u>{content}</u>\n\n📚 𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝖽 𝖡𝗒: {mention}\n📖 𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝖽 𝖨𝖣: {reporter}\n\n©️ VeerHanuman™</b>", reply_markup=InlineKeyboardMarkup(btn))
                 success = True
             elif len(content) >= 3:
                 for admin in ADMINS:
@@ -964,7 +944,7 @@ async def requests(bot, message):
                         InlineKeyboardButton('𝖵𝗂𝖾𝗐 𝖱𝖾𝗊𝗎𝖾𝗌𝗍', url=f"{message.reply_to_message.link}"),
                         InlineKeyboardButton('𝖲𝗁𝗈𝗐 𝖮𝗉𝗍𝗂𝗈𝗇𝗌', callback_data=f'show_option#{reporter}')
                       ]]
-                    reported_post = await bot.send_message(chat_id=admin, text=f"<b>📝 𝖱𝖾𝗊𝗎𝖾𝗌𝗍: <u>{content}</u>\n\n📚 𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝖽 𝖡𝗒: {mention}\n📖 𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝖽 𝖨𝖣: {reporter}\n\n©️ 𝖠𝗅𝗅𝖬𝗈𝗏𝗂𝖾𝗌𝖫𝗂𝗇𝗄™</b>", reply_markup=InlineKeyboardMarkup(btn))
+                    reported_post = await bot.send_message(chat_id=admin, text=f"<b>📝 𝖱𝖾𝗊𝗎𝖾𝗌𝗍: <u>{content}</u>\n\n📚 𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝖽 𝖡𝗒: {mention}\n📖 𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝖽 𝖨𝖣: {reporter}\n\n©️ VeerHanuman™</b>", reply_markup=InlineKeyboardMarkup(btn))
                     success = True
             else:
                 if len(content) < 3:
@@ -991,7 +971,7 @@ async def requests(bot, message):
                         InlineKeyboardButton('𝖵𝗂𝖾𝗐 𝖱𝖾𝗊𝗎𝖾𝗌𝗍', url=f"{message.link}"),
                         InlineKeyboardButton('𝖲𝗁𝗈𝗐 𝖮𝗉𝗍𝗂𝗈𝗇𝗌', callback_data=f'show_option#{reporter}')
                       ]]
-                reported_post = await bot.send_message(chat_id=REQST_CHANNEL, text=f"<b>📝 𝖱𝖾𝗊𝗎𝖾𝗌𝗍: <u>{content}</u>\n\n📚 𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝖽 𝖡𝗒: {mention}\n📖 𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝖽 𝖨𝖣: {reporter}\n\n©️ 𝖠𝗅𝗅𝖬𝗈𝗏𝗂𝖾𝗌𝖫𝗂𝗇𝗄™</b>", reply_markup=InlineKeyboardMarkup(btn))
+                reported_post = await bot.send_message(chat_id=REQST_CHANNEL, text=f"<b>📝 𝖱𝖾𝗊𝗎𝖾𝗌𝗍: <u>{content}</u>\n\n📚 𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝖽 𝖡𝗒: {mention}\n📖 𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝖽 𝖨𝖣: {reporter}\n\n©️ VeerHanuman™</b>", reply_markup=InlineKeyboardMarkup(btn))
                 success = True
             elif len(content) >= 3:
                 for admin in ADMINS:
@@ -999,7 +979,7 @@ async def requests(bot, message):
                         InlineKeyboardButton('𝖵𝗂𝖾𝗐 𝖱𝖾𝗊𝗎𝖾𝗌𝗍', url=f"{message.link}"),
                         InlineKeyboardButton('𝖲𝗁𝗈𝗐 𝖮𝗉𝗍𝗂𝗈𝗇𝗌', callback_data=f'show_option#{reporter}')
                       ]]
-                    reported_post = await bot.send_message(chat_id=admin, text=f"<b>📝 𝖱𝖾𝗊𝗎𝖾𝗌𝗍: <u>{content}</u>\n\n📚 𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝖽 𝖡𝗒: {mention}\n📖 𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝖽 𝖨𝖣: {reporter}\n\n©️ 𝖠𝗅𝗅𝖬𝗈𝗏𝗂𝖾𝗌𝖫𝗂𝗇𝗄™</b>", reply_markup=InlineKeyboardMarkup(btn))
+                    reported_post = await bot.send_message(chat_id=admin, text=f"<b>📝 𝖱𝖾𝗊𝗎𝖾𝗌𝗍: <u>{content}</u>\n\n📚 𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝖽 𝖡𝗒: {mention}\n📖 𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝖽 𝖨𝖣: {reporter}\n\n©️ VeerHanuman™</b>", reply_markup=InlineKeyboardMarkup(btn))
                     success = True
             else:
                 if len(content) < 3:
@@ -1026,7 +1006,7 @@ async def requests(bot, message):
                         InlineKeyboardButton('𝖵𝗂𝖾𝗐 𝖱𝖾𝗊𝗎𝖾𝗌𝗍', url=f"{message.link}"),
                         InlineKeyboardButton('𝖲𝗁𝗈𝗐 𝖮𝗉𝗍𝗂𝗈𝗇𝗌', callback_data=f'show_option#{reporter}')
                       ]]
-                reported_post = await bot.send_message(chat_id=REQST_CHANNEL, text=f"<b>📝 𝖱𝖾𝗊𝗎𝖾𝗌𝗍: <u>{content}</u>\n\n📚 𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝖽 𝖡𝗒: {mention}\n📖 𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝖽 𝖨𝖣: {reporter}\n\n©️ 𝖠𝗅𝗅𝖬𝗈𝗏𝗂𝖾𝗌𝖫𝗂𝗇𝗄™</b>", reply_markup=InlineKeyboardMarkup(btn))
+                reported_post = await bot.send_message(chat_id=REQST_CHANNEL, text=f"<b>📝 𝖱𝖾𝗊𝗎𝖾𝗌𝗍: <u>{content}</u>\n\n📚 𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝖽 𝖡𝗒: {mention}\n📖 𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝖽 𝖨𝖣: {reporter}\n\n©️ VeerHanuman™</b>", reply_markup=InlineKeyboardMarkup(btn))
                 success = True
             elif len(content) >= 3:
                 for admin in ADMINS:
@@ -1034,7 +1014,7 @@ async def requests(bot, message):
                         InlineKeyboardButton('𝖵𝗂𝖾𝗐 𝖱𝖾𝗊𝗎𝖾𝗌𝗍', url=f"{message.link}"),
                         InlineKeyboardButton('𝖲𝗁𝗈𝗐 𝖮𝗉𝗍𝗂𝗈𝗇𝗌', callback_data=f'show_option#{reporter}')
                       ]]
-                    reported_post = await bot.send_message(chat_id=admin, text=f"<b>📝 𝖱𝖾𝗊𝗎𝖾𝗌𝗍: <u>{content}</u>\n\n📚 𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝖽 𝖡𝗒: {mention}\n📖 𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝖽 𝖨𝖣: {reporter}\n\n©️ 𝖠𝗅𝗅𝖬𝗈𝗏𝗂𝖾𝗌𝖫𝗂𝗇𝗄™</b>", reply_markup=InlineKeyboardMarkup(btn))
+                    reported_post = await bot.send_message(chat_id=admin, text=f"<b>📝 𝖱𝖾𝗊𝗎𝖾𝗌𝗍: <u>{content}</u>\n\n📚 𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝖽 𝖡𝗒: {mention}\n📖 𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝖽 𝖨𝖣: {reporter}\n\n©️ VeerHanuman™</b>", reply_markup=InlineKeyboardMarkup(btn))
                     success = True
             else:
                 if len(content) < 3:
