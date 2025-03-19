@@ -1,7 +1,7 @@
 class script(object):
-    START_TXT = """ʜᴇʏ {}, {}\n\nHello and Welcome To "Veer Hanuman" Bot.\n\nᴍᴀɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://t.me/veer_haanuman">Veer Hanuman</a>"""
+    START_TXT = """ʜᴇʏ {}, {}\n\nWelcome To "Veer Hanuman" Bot.\n\nᴍᴀɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://t.me/veer_haanuman">Veer Hanuman</a>"""
 
-    GSTART_TXT = """ʜᴇʏ {},\n\nHello and Welcome To "Veer Hanuman" Bot.\n\nᴍᴀɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://t.me/veer_haanuman">Veer Hanuman</a>"""
+    GSTART_TXT = """ʜᴇʏ {},\n\nWelcome To "Veer Hanuman" Bot.\n\nᴍᴀɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://t.me/veer_haanuman">Veer Hanuman</a>"""
     
     HELP_TXT = """<b>ʜᴇʏ {},
     
